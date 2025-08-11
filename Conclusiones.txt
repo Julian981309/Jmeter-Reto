@@ -2,9 +2,10 @@
 
 Durante la ejecución de la prueba de carga del servicio de login con Apache JMeter se obtuvieron los siguientes hallazgos:
 
-   - Se observaron algunos errores puntuales en la validación de credenciales, probablemente relacionados con datos incorrectos o caducados       en el CSV.
+   - Se observaron algunos errores puntuales en la validación de credenciales, probablemente relacionados con datos incorrectos o caducados en el CSV.
    - Se enviaba metodo POST para ejecutar la URL por postman y jmeter y no se respondia
    - Se recomienta monitorear recursos del servidor durante la prueba para detectar posibles errores
 
 Las pruebas realizadas no fueron satisfactorias debido a problemas con la API. En particular, la API no aceptaba correctamente las solicitudes POST enviadas, lo que impedía avanzar con la validación esperada. Además, en algunos casos la comparación del código de estado HTTP devolvía inconsistencias, como comparar un estado 200 con un carácter slash ("/"), lo que generaba fallos en las aserciones. Por estas razones, no se pudo confirmar el correcto funcionamiento esperado de la API bajo las condiciones de prueba planteadas.
+
 
