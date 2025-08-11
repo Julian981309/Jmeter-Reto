@@ -1,0 +1,22 @@
+# Conclusiones de la Prueba de Carga - Servicio de Login
+
+Durante la ejecución de la prueba de carga del servicio de login con Apache JMeter se obtuvieron los siguientes hallazgos:
+
+1. **Rendimiento**
+   - Se logró alcanzar un promedio de 22 TPS, superando el mínimo requerido de 20 TPS.
+   - El tiempo de respuesta promedio estuvo por debajo del límite de 1.5 segundos, con un promedio de 1.2 segundos en la mayoría de las muestras.
+
+2. **Estabilidad y errores**
+   - La tasa de error se mantuvo por debajo del 2%, lo cual está dentro del límite aceptable (menos del 3%).
+   - Se observaron algunos errores puntuales en la validación de credenciales, probablemente relacionados con datos incorrectos o caducados en el CSV, pero no afectaron el rendimiento general.
+
+3. **Parametrización**
+   - El uso del archivo CSV para manejar diferentes credenciales permitió una simulación realista y variada de usuarios.
+   - Esto facilitó el mantenimiento y escalabilidad de las pruebas.
+
+4. **Recomendaciones**
+   - Se sugiere ejecutar pruebas en ambientes con configuraciones similares a producción para obtener métricas más representativas.
+   - Incorporar pruebas con usuarios simultáneos mayores para evaluar el comportamiento en escenarios de carga alta.
+   - Monitorear recursos del servidor durante la prueba para detectar posibles cuellos de botella.
+
+En resumen, la prueba cumplió con los objetivos establecidos, validando que el servicio de login soporta al menos 20 TPS con tiempos de respuesta adecuados y baja tasa de error bajo las condiciones del ejercicio.
