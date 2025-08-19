@@ -42,3 +42,4 @@ Para alcanzar al menos 20 TPS (transacciones por segundo), ajusta los usuarios y
 - Tiempo máximo de respuesta: 1.5 segundos
 - Tasa de error menor al 3%
 - Al menos 20 TPS (transacciones por segundo)
+
